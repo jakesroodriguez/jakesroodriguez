@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista Previa de Perfil GitHub - JRG Agency (@jakesroodriguez)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #050505;
+      color: #e6edf3;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 940px;
+      width: 100%;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 32px 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.9);
+    }
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #21262d;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      color: #8b949e;
+      font-family: 'Fira Code', monospace;
+    }
+    .header-bar .dots {
+      display: flex;
+      gap: 6px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .dot.red { background: #ff5f56; }
+    .dot.yellow { background: #ffbd2e; }
+    .dot.green { background: #27c93f; }
+    
+    h1, h2, h3 {
+      color: #ffffff;
+      margin: 24px 0 12px 0;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    h3 {
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      color: #f0f6fc;
+      border-bottom: 1px solid #21262d;
+      padding-bottom: 8px;
+    }
+    p {
+      margin-bottom: 12px;
+      color: #c9d1d9;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background: #07090c;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      color: #e6edf3;
+      margin: 16px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    table, th, td {
+      border: 1px solid #30363d;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background: #161b22;
+      color: #f0f6fc;
+      font-size: 13px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .center {
+      text-align: center;
+    }
+    .banner-img {
+      border-radius: 10px;
+      border: 1px solid #30363d;
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    }
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .badge-grid img {
+      margin: 2px;
+    }
+    .stats-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 16px 0;
+    }
+    .stats-row img {
+      border-radius: 8px;
+    }
+    .status-tags {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 14px 0;
+    }
+    details {
+      background: #090d13;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 10px 0;
+      transition: all 0.2s ease;
+    }
+    details[open] {
+      border-color: #525252;
+      background: #0b1118;
+    }
+    summary {
+      cursor: pointer;
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      color: #f0f6fc;
+      outline: none;
+    }
+    summary:hover {
+      color: #58a6ff;
+    }
+    blockquote {
+      border-left: 3px solid #ffffff;
+      padding: 8px 16px;
+      background: #111419;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-bar">
+      <div class="dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div>README.md &bull; github.com/jakesroodriguez</div>
+      <div>JRG AGENCY // 3D WEBGL STUDIO</div>
+    </div>
+
+    <!-- JRG Agency 3D Banner -->
+    <img src="./assets/banner.jpg" alt="JRG Agency Banner" class="banner-img" />
+
+    <!-- Animated Typing Header -->
+    <div class="center" style="margin-bottom: 16px;">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=1000&color=FFFFFF&center=true&vCenter=true&multiline=false&width=760&height=50&lines=JRG+Agency+%2F%2F+Creative+Digital+Studio+%26+3D+Web;Immersive+WebGL+%26+Three.js+Realtime+Experiences;Cinematic+GSAP+Timelines+%26+Lenis+Smooth+Scroll;Bespoke+High-Performance+Web+Architecture" alt="Typing Header" />
+    </div>
+
+    <!-- Divider -->
+    <img src="./assets/divider.svg" width="100%" alt="Divider" style="margin-bottom: 16px;" />
+
+    <!-- Quick Badges -->
+    <div class="status-tags">
+      <img src="https://img.shields.io/badge/STUDIO-JRG%20AGENCY-000000?style=for-the-badge&logo=codewars&logoColor=white&labelColor=111111" alt="Studio" />
+      <img src="https://img.shields.io/badge/FOUNDER-JAKES%20RODRIGUEZ-000000?style=for-the-badge&logo=probot&logoColor=white&labelColor=111111" alt="Founder" />
+      <img src="https://img.shields.io/badge/TECH-THREE.JS%20%7C%20GSAP-000000?style=for-the-badge&logo=webgl&logoColor=white&labelColor=111111" alt="Tech" />
+      <img src="https://img.shields.io/badge/AVAILABILITY-OPEN%20FOR%20PROJECTS-000000?style=for-the-badge&logo=statuspal&logoColor=00ff66&labelColor=111111" alt="Status" />
+    </div>
+
+    <!-- Manifesto & Engineered Typography -->
+    <h3>🏛️ // 01 · STUDIO_MANIFESTO & PIXEL_ENGINE</h3>
+    <div style="margin: 14px 0;">
+      <img src="./assets/jrg_typography.svg" alt="JRG Agency Typography" style="width: 100%; border-radius: 8px;" />
+    </div>
+
+    <pre><code>┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                       │
+│        ██╗██████╗  ██████╗      █████╗  ██████╗ ███████╗███╗   ██╗ ██████╗██╗   ██╗   │
+│        ██║██╔══██╗██╔════╝     ██╔══██╗██╔════╝ ██╔════╝████╗  ██║██╔════╝╚██╗ ██╔╝   │
+│        ██║██████╔╝██║  ███╗    ███████║██║  ███╗█████╗  ██╔██╗ ██║██║      ╚████╔╝    │
+│   ██   ██║██╔══██╗██║   ██║    ██╔══██║██║   ██║██╔══╝  ██║╚██╗██║██║       ╚██╔╝     │
+│   ╚█████╔╝██║  ██║╚██████╔╝    ██║  ██║╚██████╔╝███████╗██║ ╚████║╚██████╗   ██║      │
+│    ╚════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝   ╚═╝      │
+│                                                                                       │
+│            [ JRG AGENCY // CREATIVE DIGITAL STUDIO & 3D WEB ENGINEERING ]             │
+│                                                                                       │
+└───────────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+
+    <pre><code>entity: "JRG Agency"
+lead_engineer: "Jakes Rodriguez (@jakesroodriguez)"
+location: "Urretxu, País Vasco, España"
+aesthetic: "Monochrome Cybernetic / Minimalist Luxury Tech"
+discipline: "High-Performance 3D Web Development & Digital Experiences"
+core_stack: ["Three.js / WebGL", "React 18 / Next.js", "TypeScript", "GSAP & ScrollTrigger", "Lenis"]
+direct_inquiries: "jakessrodriguezz@gmail.com"</code></pre>
+
+    <blockquote>
+      <strong>JRG Agency</strong> concibe la web como una disciplina arquitectónica inmersiva. No construimos plantillas estáticas: diseñamos <strong>sistemas visuales tridimensionales</strong>, coreografías de scroll cinemáticas con física inercial y motores WebGL capaces de convertir cualquier visita en una experiencia memorable.
+    </blockquote>
+
+    <!-- Divider -->
+    <img src="./assets/divider.svg" width="100%" alt="Divider" style="margin: 20px 0;" />
+
+    <!-- Interactive 3D Engine -->
+    <h3>🌐 // 02 · INTERACTIVE 3D ENGINE & WEBGL PIPELINE</h3>
+    <div style="margin: 16px 0;">
+      <img src="./assets/tech_core_3d.svg" alt="3D Isometric Engine" style="width: 100%; border-radius: 10px;" />
+    </div>
+
+    <details>
+      <summary><strong>🔍 [EXPAND] 01 // ARQUITECTURA 3D, WEBGL & SHADERS (Three.js & R3F)</strong></summary>
+      <pre><code>three_js_architecture:
+  renderer: "WebGLRenderer with antialias, ACESFilmicToneMapping & sRGBEncoding"
+  geometry_pipeline: "BufferGeometry with custom vertex attributes & instanced meshes"
+  asset_optimization: "DRACO compressed GLTF models + KTX2 / Basis Universal textures"
+  shading_engine: "GLSL Custom Shaders for reactive particle fields and liquid glass refraction"
+  framerate_benchmark: "Locked 60fps mobile / 120fps high-refresh desktop monitors"</code></pre>
+      <p style="font-size: 13px; color: #8b949e;">Nuestras experiencias 3D se diseñan desde cero para optimizar el Draw Call Budget. Agrupamos geometrías con InstancedMesh, gestionamos luces dinámicas sin saturar la GPU y aseguramos que cada modelo cargue de forma asíncrona mediante preloading inteligente.</p>
+    </details>
+
+    <details>
+      <summary><strong>🎬 [EXPAND] 02 // CINEMÁTICA DE SCROLL & INTERACCIÓN FLUIDA (GSAP + Lenis)</strong></summary>
+      <pre><code>scroll_mechanics:
+  scroll_driver: "Lenis Smooth Scroll with customizable inertia lerp (0.1)"
+  choreography: "GSAP Timeline & ScrollTrigger with pinpoint scrubbing"
+  layer_depth: "Multi-plane parallax mapping with differential z-axis translation"
+  section_pinning: "Hardware-accelerated sticky scroll displays without DOM layout thrashing"</code></pre>
+      <p style="font-size: 13px; color: #8b949e;">El scroll deja de ser un simple desplazamiento vertical: se convierte en el gatillo de una narrativa audiovisual interactiva donde el usuario tiene el control total de la velocidad y revelación de contenidos.</p>
+    </details>
+
+    <details>
+      <summary><strong>⚡ [EXPAND] 03 // FRONTEND ULTRA RÁPIDO & TIPOGRAFÍA DE PRECISIÓN (React + Vite)</strong></summary>
+      <pre><code>frontend_performance:
+  bundle_strategy: "Vite code-splitting with dynamic dynamic imports for heavy 3D canvases"
+  type_safety: "100% Strict TypeScript for fault-tolerant component architecture"
+  typography_mesh: "Custom fluid clamp() typographic scales & variable monospace typography"
+  core_web_vitals: "LCP < 1.2s | FID < 50ms | CLS 0.00"</code></pre>
+    </details>
+
+    <!-- Divider -->
+    <img src="./assets/divider.svg" width="100%" alt="Divider" style="margin: 20px 0;" />
+
+    <!-- Tech Mesh -->
+    <h3>🛠️ // 03 · CORE ARSENAL & TECH MESH</h3>
+    <table>
+      <tr>
+        <th width="26%">🎮 3D & Creative Tech</th>
+        <td class="badge-grid">
+          <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white" />
+          <img src="https://img.shields.io/badge/WebGL-000000?style=for-the-badge&logo=webgl&logoColor=white" />
+          <img src="https://img.shields.io/badge/GSAP_3-000000?style=for-the-badge&logo=greensock&logoColor=white" />
+          <img src="https://img.shields.io/badge/ScrollTrigger-000000?style=for-the-badge&logo=scrolltrigger&logoColor=white" />
+          <img src="https://img.shields.io/badge/Lenis_Physics-000000?style=for-the-badge&logo=speedtest&logoColor=white" />
+          <img src="https://img.shields.io/badge/GLSL_Shaders-000000?style=for-the-badge&logo=opengl&logoColor=white" />
+        </td>
+      </tr>
+      <tr>
+        <th>⚡ Frontend Engineering</th>
+        <td class="badge-grid">
+          <img src="https://img.shields.io/badge/TypeScript_5-000000?style=for-the-badge&logo=typescript&logoColor=white" />
+          <img src="https://img.shields.io/badge/React_18-000000?style=for-the-badge&logo=react&logoColor=white" />
+          <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+          <img src="https://img.shields.io/badge/Vite-000000?style=for-the-badge&logo=vite&logoColor=white" />
+          <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+        </td>
+      </tr>
+      <tr>
+        <th>☁️ Backend & Cloud</th>
+        <td class="badge-grid">
+          <img src="https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+          <img src="https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=white" />
+          <img src="https://img.shields.io/badge/Supabase-000000?style=for-the-badge&logo=supabase&logoColor=white" />
+          <img src="https://img.shields.io/badge/Vercel_Edge-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+        </td>
+      </tr>
+      <tr>
+        <th>🛠️ Workflow & Tooling</th>
+        <td class="badge-grid">
+          <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" />
+          <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white" />
+          <img src="https://img.shields.io/badge/VS_Code-000000?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+        </td>
+      </tr>
+    </table>
+
+    <!-- Divider -->
+    <img src="./assets/divider.svg" width="100%" alt="Divider" style="margin: 20px 0;" />
+
+    <!-- Productions -->
+    <h3>🚀 // 04 · FEATURED CLIENT PRODUCTIONS & SHOWCASE</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Producción</th>
+          <th>Arquitectura & Mecánicas</th>
+          <th>Stack</th>
+          <th style="text-align: center;">Enlaces</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>⚡ JRG Agency — Flagship</strong></td>
+          <td>Sitio web insignia del estudio con canvas 3D interactivo en WebGL, orquestación de scroll con GSAP ScrollTrigger y física inercial Lenis.</td>
+          <td><code>Three.js</code> <code>GSAP</code> <code>React</code> <code>Vite</code></td>
+          <td style="text-align: center;"><a href="https://github.com/jakesroodriguez/JRG-agency" target="_blank">Código</a></td>
+        </tr>
+        <tr>
+          <td><strong>📱 Ayat Móviles</strong></td>
+          <td>Plataforma digital móvil de alta velocidad con interfaz ultra fluida y optimización para pantallas táctiles.</td>
+          <td><code>TypeScript</code> <code>Modern Web</code></td>
+          <td style="text-align: center;"><a href="https://ayat-moviles.vercel.app" target="_blank">Live Demo</a> &bull; <a href="https://github.com/jakesroodriguez/Ayat_Moviles" target="_blank">Repo</a></td>
+        </tr>
+        <tr>
+          <td><strong>📷 Kescam / Visión Interactiva</strong></td>
+          <td>Aplicación web de procesamiento y análisis visual interactivo en tiempo real directamente en el navegador.</td>
+          <td><code>TypeScript</code> <code>Web APIs</code></td>
+          <td style="text-align: center;"><a href="https://kescam.vercel.app" target="_blank">Live Demo</a> &bull; <a href="https://github.com/jakesroodriguez/camara_vision" target="_blank">Repo</a></td>
+        </tr>
+        <tr>
+          <td><strong>🎓 Ikasroom</strong></td>
+          <td>Plataforma educativa interactiva con UI vanguardista y alto rendimiento de renderizado.</td>
+          <td><code>HTML5</code> <code>CSS3</code> <code>JS</code></td>
+          <td style="text-align: center;"><a href="https://ikasroom-2jd2.vercel.app" target="_blank">Live Demo</a> &bull; <a href="https://github.com/jakesroodriguez/ikasroom" target="_blank">Repo</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Divider -->
+    <img src="./assets/divider.svg" width="100%" alt="Divider" style="margin: 20px 0;" />
+
+    <!-- Telemetry -->
+    <h3>📊 // 05 · STUDIO TELEMETRY & ACTIVITY METRICS</h3>
+    <div class="center" style="margin-top: 16px;">
+      <img src="https://github-profile-trophy.vercel.app/?username=jakesroodriguez&theme=monochrome&column=7&margin_w=10&no-frame=true&no-bg=true" style="width: 100%; margin-bottom: 12px;" alt="Trophies" />
+
+      <div class="stats-row">
+        <img src="https://github-readme-stats.vercel.app/api?username=jakesroodriguez&show_icons=true&theme=tokyonight&bg_color=050505&title_color=ffffff&text_color=a3a3a3&icon_color=ffffff&border_color=262626&hide_border=false" width="48%" alt="GitHub Stats" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jakesroodriguez&layout=compact&theme=tokyonight&bg_color=050505&title_color=ffffff&text_color=a3a3a3&border_color=262626&hide_border=false" width="48%" alt="Top Languages" />
+      </div>
+
+      <img src="https://streak-stats.demolab.com/?user=jakesroodriguez&theme=dark&background=050505&border=262626&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=a3a3a3&currStreakLabel=ffffff&sideLabels=a3a3a3&dates=737373" style="max-width: 100%; border-radius: 8px; margin-top: 10px;" alt="Streak Stats" />
+    </div>
+
+    <!-- Divider -->
+    <img src="./assets/divider.svg" width="100%" alt="Divider" style="margin: 20px 0;" />
+
+    <!-- Contact -->
+    <h3 style="text-align: center; border-bottom: none;">🌐 // 06 · WORK_WITH_US — TRANSMISSION & COMMISSION</h3>
+    <div class="center" style="margin: 16px 0;">
+      <a href="mailto:jakessrodriguezz@gmail.com"><img src="https://img.shields.io/badge/SOLICITAR%20PRESUPUESTO-000000?style=for-the-badge&logo=gmail&logoColor=white&labelColor=111111" /></a>
+      <a href="https://github.com/jakesroodriguez/JRG-agency" target="_blank"><img src="https://img.shields.io/badge/JRG%20AGENCY%20REPO-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" /></a>
+      <a href="https://linkedin.com/in/jakesroodriguez" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111" /></a>
+    </div>
+
+    <div class="center" style="margin-top: 30px; font-size: 12px; color: #8b949e; font-family: 'Fira Code', monospace;">
+      ⚡ JRG Agency &bull; Three.js &bull; GSAP ScrollTrigger &bull; Lenis Physics &bull; Urretxu, Basque Country // END_OF_TRANSMISSION
+    </div>
+  </div>
+
+</body>
+</html>
