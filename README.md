@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- 3D Monochromatic JRG Agency Banner -->
-  <img src="./assets/banner.jpg" alt="JRG Agency Banner" width="100%" style="border-radius: 12px; border: 1px solid #262626;" />
+  <img src="./assets/banner.jpg?v=2" alt="JRG Agency Banner" width="100%" style="border-radius: 12px; border: 1px solid #262626;" />
 
   <br/><br/>
 
